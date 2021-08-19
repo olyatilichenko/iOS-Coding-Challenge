@@ -11,7 +11,9 @@ import SwiftUI
 struct iOS_Coding_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let service = RedditService()
+            let listingViewModel = ListingViewModel(service: service)
+            PostsList(listingViewModel: listingViewModel)
         }
     }
 }

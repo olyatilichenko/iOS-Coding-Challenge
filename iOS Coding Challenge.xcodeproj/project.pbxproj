@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EBC0D00326CED843001A8EA6 /* iOS_Coding_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D00226CED843001A8EA6 /* iOS_Coding_ChallengeApp.swift */; };
-		EBC0D00526CED843001A8EA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D00426CED843001A8EA6 /* ContentView.swift */; };
+		EBC0D00526CED843001A8EA6 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D00426CED843001A8EA6 /* PostList.swift */; };
 		EBC0D00726CED846001A8EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC0D00626CED846001A8EA6 /* Assets.xcassets */; };
 		EBC0D00A26CED846001A8EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC0D00926CED846001A8EA6 /* Preview Assets.xcassets */; };
 		EBC0D01526CED846001A8EA6 /* iOS_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D01426CED846001A8EA6 /* iOS_Coding_ChallengeTests.swift */; };
 		EBC0D02026CED846001A8EA6 /* iOS_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D01F26CED846001A8EA6 /* iOS_Coding_ChallengeUITests.swift */; };
+		EBC0D03126CEDA63001A8EA6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D03026CEDA63001A8EA6 /* Post.swift */; };
+		EBC0D03326CEDCE2001A8EA6 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D03226CEDCE2001A8EA6 /* Listing.swift */; };
+		EBC0D03626CEDD4B001A8EA6 /* RedditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D03526CEDD4B001A8EA6 /* RedditService.swift */; };
+		EBC0D03826CEDE11001A8EA6 /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D03726CEDE11001A8EA6 /* ListingViewModel.swift */; };
+		EBC0D03A26CEDE5A001A8EA6 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D03926CEDE5A001A8EA6 /* PostRow.swift */; };
+		EBC0D03C26CF0918001A8EA6 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D03B26CF0918001A8EA6 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +41,7 @@
 /* Begin PBXFileReference section */
 		EBC0CFFF26CED843001A8EA6 /* iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0D00226CED843001A8EA6 /* iOS_Coding_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Coding_ChallengeApp.swift; sourceTree = "<group>"; };
-		EBC0D00426CED843001A8EA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBC0D00426CED843001A8EA6 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		EBC0D00626CED846001A8EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC0D00926CED846001A8EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBC0D00B26CED846001A8EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +51,12 @@
 		EBC0D01B26CED846001A8EA6 /* iOS Coding ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Coding ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0D01F26CED846001A8EA6 /* iOS_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
 		EBC0D02126CED846001A8EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC0D03026CEDA63001A8EA6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EBC0D03226CEDCE2001A8EA6 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		EBC0D03526CEDD4B001A8EA6 /* RedditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditService.swift; sourceTree = "<group>"; };
+		EBC0D03726CEDE11001A8EA6 /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
+		EBC0D03926CEDE5A001A8EA6 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
+		EBC0D03B26CF0918001A8EA6 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,10 @@
 		EBC0CFF626CED842001A8EA6 = {
 			isa = PBXGroup;
 			children = (
+				EBC0D02D26CED9F1001A8EA6 /* Model */,
+				EBC0D02E26CED9FB001A8EA6 /* View */,
+				EBC0D02F26CEDA04001A8EA6 /* ViewModel */,
+				EBC0D03426CEDD25001A8EA6 /* Service */,
 				EBC0D00126CED843001A8EA6 /* iOS Coding Challenge */,
 				EBC0D01326CED846001A8EA6 /* iOS Coding ChallengeTests */,
 				EBC0D01E26CED846001A8EA6 /* iOS Coding ChallengeUITests */,
@@ -96,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				EBC0D00226CED843001A8EA6 /* iOS_Coding_ChallengeApp.swift */,
-				EBC0D00426CED843001A8EA6 /* ContentView.swift */,
+				EBC0D00426CED843001A8EA6 /* PostList.swift */,
 				EBC0D00626CED846001A8EA6 /* Assets.xcassets */,
 				EBC0D00B26CED846001A8EA6 /* Info.plist */,
 				EBC0D00826CED846001A8EA6 /* Preview Content */,
@@ -128,6 +144,40 @@
 				EBC0D02126CED846001A8EA6 /* Info.plist */,
 			);
 			path = "iOS Coding ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		EBC0D02D26CED9F1001A8EA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBC0D03026CEDA63001A8EA6 /* Post.swift */,
+				EBC0D03226CEDCE2001A8EA6 /* Listing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBC0D02E26CED9FB001A8EA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBC0D03926CEDE5A001A8EA6 /* PostRow.swift */,
+				EBC0D03B26CF0918001A8EA6 /* RemoteImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBC0D02F26CEDA04001A8EA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBC0D03726CEDE11001A8EA6 /* ListingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EBC0D03426CEDD25001A8EA6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EBC0D03526CEDD4B001A8EA6 /* RedditService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC0D00526CED843001A8EA6 /* ContentView.swift in Sources */,
+				EBC0D03126CEDA63001A8EA6 /* Post.swift in Sources */,
+				EBC0D03A26CEDE5A001A8EA6 /* PostRow.swift in Sources */,
+				EBC0D03626CEDD4B001A8EA6 /* RedditService.swift in Sources */,
+				EBC0D03C26CF0918001A8EA6 /* RemoteImage.swift in Sources */,
+				EBC0D00526CED843001A8EA6 /* PostList.swift in Sources */,
+				EBC0D03326CEDCE2001A8EA6 /* Listing.swift in Sources */,
 				EBC0D00326CED843001A8EA6 /* iOS_Coding_ChallengeApp.swift in Sources */,
+				EBC0D03826CEDE11001A8EA6 /* ListingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
