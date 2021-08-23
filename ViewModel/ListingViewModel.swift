@@ -25,7 +25,7 @@ class ListingViewModel: ObservableObject {
         
         isLoadingPage = true
         
-        service.searchSubreddit(after: postURL) { [weak self] result in
+        service.getReddit(after: postURL) { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoadingPage = false
                 

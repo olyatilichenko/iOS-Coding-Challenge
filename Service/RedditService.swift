@@ -8,6 +8,7 @@
 import Foundation
 
 class RedditService {
+    
     private let session: URLSession
     private let decoder: JSONDecoder
     private let limit = 21
@@ -17,12 +18,14 @@ class RedditService {
         self.decoder = decoder
     }
     
-    func searchSubreddit(after postUrl: String?, completion: @escaping (Result<[Post], Error>) -> Void) {
+    func getReddit(after postUrl: String?, completion: @escaping (Result<[Post], Error>) -> Void) {
         guard var url = URL(string: "https://www.reddit.com/.json?sort=new&limit=\(limit)") else {
             preconditionFailure("Failed to construct URL")
         }
         
-        if let lastPost = postUrl, let newUrl = URL(string: url.absoluteString + "&after=\(lastPost)") {
+        // Used before to get the older posts
+        
+        if let lastPost = postUrl, let newUrl = URL(string: url.absoluteString + "&before=\(lastPost)") {
             url = newUrl
         }
         
